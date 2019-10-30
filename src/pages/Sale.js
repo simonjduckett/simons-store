@@ -8,6 +8,9 @@ import mensale from '../images/mensale.png';
 
 
 export class Sale extends React.Component {
+	componentDidMount() {
+		window.scrollTo(0, 0)
+	}
 	render() {
 		return (
 

@@ -79,6 +79,10 @@ class App extends Component {
     this.search = this.search.bind(this)
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   miniUpdate(item){
 var mini = document.getElementById("mini")
     if (this.state.minibag.includes(item)) {
@@ -310,7 +314,8 @@ var mini = document.getElementById("mini")
                   <Shipping />
 
                         <div className='container'>
-                          <Route exact path='/' component={Home} />
+                          <Route exact path='/' render={() => { return <Home />} } />
+                          <Route exact path='/simons-store/' render={() => { return <Home /> }} />
                           <Route path='/sale' component={Sale} />
                           <Route path='/men' component={Men} />
                           <Route path='/women' component={Women} />

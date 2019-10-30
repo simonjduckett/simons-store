@@ -18,6 +18,9 @@ import jeans_girls2 from '../images/kids/jeans-girls2.png';
 import jacket_girls from '../images/kids/jacket-girls.png';
 
 export class Kids extends React.Component {
+	componentDidMount() {
+		window.scrollTo(0, 0)
+	}
 	render() {
 		return (
 				<div className='container'>

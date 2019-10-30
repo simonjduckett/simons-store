@@ -10,6 +10,9 @@ import tshirt from '../images/women/tshirt.png';
 import trousers from '../images/women/trousers.png'
 
 export class Women extends React.Component {
+	componentDidMount() {
+		window.scrollTo(0, 0)
+	}
 	render() {
 		return (
 			<div className='container'>
