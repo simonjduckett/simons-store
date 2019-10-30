@@ -308,9 +308,9 @@ var mini = document.getElementById("mini")
                   <Mini minibag={this.state.minibag}/>
 
                   <Shipping />
+
                         <div className='container'>
                           <Route exact path='/' component={Home} />
-                          
                           <Route path='/sale' component={Sale} />
                           <Route path='/men' component={Men} />
                           <Route path='/women' component={Women} />
